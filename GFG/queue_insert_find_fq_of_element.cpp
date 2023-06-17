@@ -1,3 +1,4 @@
+//***1> queue can not traverse****.
 //{ Driver Code Starts
 //Initial Template for C++
 #include <bits/stdc++.h>
@@ -21,6 +22,17 @@ class Solution{
         // Your code here
           queue<int>p;
         int counter=0;
+	 // int counter=0, temp=0, size=q.size();
+        // while(size--)
+        // {
+        //     temp=q.front();
+        //     if(temp==k){
+        //         counter++;
+        //     }
+        //     q.pop();
+        //     q.push(temp);
+        // }
+        // return counter;
         while(!q.empty())
         {
             p.push(q.front());
