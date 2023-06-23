@@ -1,3 +1,4 @@
+//Given an array of size N-1 such that it only contains distinct integers in the range of 1 to N. Find the missing element.
 //{ Driver Code Starts
 // Initial template for C++
 
@@ -13,18 +14,25 @@ using namespace std;
 class Solution{
   public:
     int missingNumber(vector<int>& array, int n) {
-        Your code goes here
-        int missingno=0;
-        sort(array.begin(),array.end());
-        for(int i=0;i<n;i++)
+        // Your code goes here
+        // int missingno=0;
+        // sort(array.begin(),array.end());
+        // for(int i=0;i<n;i++)
+        // {
+        //     if(i+1!=array[i]){
+        //       return i+1;
+        //     }
+        // }
+        
+        
+        int targat=0,sum=0;
+        targat=(n*(n+1)/2);
+        for(int i=0;i<n-1;i++)
         {
-            if(i+1!=array[i]){
-              return i+1;
-            }
+            sum+=array[i];
         }
         
-        
-
+        return (targat-sum);
         
     }
 };
