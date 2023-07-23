@@ -1,3 +1,45 @@
+
+#include <iostream>
+using namespace std;
+int printarray(int arr[],int n);
+int reverce(int arr[], int n);
+
+int main()
+{
+    int arr[]= {2,3,4,1,7,};
+    int n=5;
+    printarray(arr,n);
+    reverce(arr,n);
+    printarray(arr,n);
+    return 0;
+}
+
+
+int printarray(int arr[], int n){
+    for(int i=0;i<n;i++)
+    {
+        cout<<arr[i]<<", ";
+    }
+    return 0;
+}
+
+int reverce(int arr[], int n)
+{
+    int temp=0;
+    for(int i=0;i<n/2;i++)
+    {
+        temp = arr[i];
+        arr[i]=arr[n-i-1];
+        arr[n-i-1]=temp;
+    }
+    
+    return 0;
+}
+
+===================================================
+
+
+
 #include <iostream>
 using namespace std;
 
